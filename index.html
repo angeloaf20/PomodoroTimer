@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="clock-container">
+  <div class="intro">
+    <p>Click the buttons to start or pause the countdown!</p>
+    <p class="break" id="phase"></p>
+  </div>
+  <div class="clock" id="clock">
+    <div class="clock-bkgd">
+      <div class="clock-time" id="clock-time">
+        25:00
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="operation play" id="play">
+      <img class="icon play" src="https://www.svgrepo.com/show/512674/play-1003.svg" alt="icon play">
+    </button>
+    <button class="operation pause" id="pause">
+      <img src="https://www.svgrepo.com/show/500962/pause.svg" alt="icon pause" class="icon pause">
+    </button>
+    <button class="operation edit" id="edit">
+      <img class="icon edit" src="https://www.svgrepo.com/show/42233/pencil-edit-button.svg" alt="icon edit">
+    </button>
+    <button class="operation skip" id="skip">
+      <img class="icon skip" src="https://www.svgrepo.com/show/470892/skip-forward.svg" alt="icon-skip">
+    </button>
+  </div>
+  <div class="edit-time" id="edit-time" style="display: none;">
+    <label id="minute" style="color: white">New minutes:
+       <input type="number" id="new-minute">
+    </label>
+    <button id="edit-button" style="margin-left: 5px;">New time</button>
+  </div>    
+</div>
+<div class="todo-list">
+  <div class="list" id="list">
+    <p>Tasks to complete:</p>
+    <div class="todos">
+      <ul class="todos" id="todos">
+      </ul>
+    </div>
+    <input type="text" id="todo">
+    <button id="add-todo">
+      <img src="" alt="Add">
+    </button>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
